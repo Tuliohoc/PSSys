@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard |</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="style_dash.css">
+</head>
+
+<body>
+    <!-- =============== Navegação ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="imagens/logoSys.png" width="120px" alt="Logo">
+                        <span class="icon">
+                            <ion-icon name="NextSys"></ion-icon>
+                        </span>
+                        <span class="title"> </span> 
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="clientes.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="avisos.html">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Avisos</span>
+                    </a>
+                
+                </li>
+
+                <li>
+                    <a href="config.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configurações</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="seguranca.html">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Segurança</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="imagens/logo.png" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">20</div>
+                        <div class="cardName">Cadastros novos</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">8</div>
+                        <div class="cardName">Propostas</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">50</div>
+                        <div class="cardName">Comentarios</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">R$7,842</div>
+                        <div class="cardName">Vendas</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ================ Add Charts JS ================= -->
+            <div class="chartsBx">
+                <div class="chart"> <canvas id="chart-1"></canvas> </div>
+                <div class="chart"> <canvas id="chart-2"></canvas> </div>
+            </div>
+
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="Propostas">
+                    <div class="cardHeader">
+                        <h2>Propostas</h2>
+                        <a href="#" class="btn">Ver Tudo</a>
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nome</td>
+                                <td>Valor</td>
+                                <td>Tipo</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Helena</td>
+                                <td>R$1200</td>
+                                <td>Empréstimo consignado</td>
+                                <td><span class="status Negado">Negado</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Vitor</td>
+                                <td>R$110</td>
+                                <td>FGTS</td>
+                                <td><span class="status Pendente">Pendente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Cleuza</td>
+                                <td>R$1200</td>
+                                <td>Empréstimo consignado</td>
+                                <td><span class="status Retorno">Retorno</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Larissa</td>
+                                <td>R$620</td>
+                                <td>FGTS</td>
+                                <td><span class="status Emprogresso">Em progresso</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Fernanda</td>
+                                <td>R$1200</td>
+                                <td>Empréstimo consignado</td>
+                                <td><span class="status Pendente">Pendente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Dora</td>
+                                <td>R$110</td>
+                                <td>FGTS</td>
+                                <td><span class="status Pendente">Pendente</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Maria</td>
+                                <td>R$1200</td>
+                                <td>FGTS</td>
+                                <td><span class="status Retorno">Retorno</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>José </td>
+                                <td>R$620</td>
+                                <td>Empréstimo consignado</td>
+                                <td><span class="status Emprogresso">Em progresso</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ================= New Customers ================ -->
+                <div class="cadastrosNovos">
+                    <div class="cardHeader">
+                        <h2>Cadastros novos</h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"></div>
+                            </td>
+                            <td>
+                                <h4>David <br> <span>São Paulo-SP</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"></div>
+                            </td>
+                            <td>
+                                <h4>Cleuza <br> <span>Campo Grande-MS</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"></div>
+                            </td>
+                            <td>
+                                <h4>José <br> <span>Dourados-MS</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"></div>
+                            </td>
+                            <td>
+                                <h4>Helena <br> <span>Sinop-MT</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"></div>
+                            </td>
+                            <td>
+                                <h4>Dora <br> <span>Belo Horizonte-MG</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"></div>
+                            </td>
+                            <td>
+                                <h4>Maria <br> <span>São Paulo-SP</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"></div>
+                            </td>
+                            <td>
+                                <h4>Fernanda <br> <span>Campo Grande-MS</span></h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width="60px">
+                                <div class="imgBx"></div>
+                            </td>
+                            <td>
+                                <h4>Anita <br> <span>Sinop-MT</span></h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="main.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
